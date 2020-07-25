@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <script>
+            
+            var nome = prompt ('Olá, bem vindo a calculadora de IMC, para começarmos poderia nos informar o seu nome?')
+            var altura = prompt('Agora, digite sua altura utilizando . para separar')
+            var peso = prompt('Precisaremos também que nos forneça o seu peso, novamente utilize . para separar')
+
+            var alt = altura*altura;
+            var imc = peso/alt;
+            
+            if (imc <= 18.5 ){
+                document.write('Certo '+ nome +', seu IMC é ' + imc + ', logo você está abaixo do peso ')
+            }
+            else if(imc >= 16.6 && imc <= 24.9){
+                document.write('Certo '+ nome +', seu IMC é ' + imc + ', logo você com o peso ideal, Parabéns! ')
+            }
+            else if(imc >= 25.0 && imc <= 29.9){
+                document.write('Certo '+ nome +', seu IMC é ' + imc + ', logo você está levemente acima do peso ')
+            }
+            else if(imc >= 30.0 && imc <= 34.9){
+                document.write('Certo '+ nome +', seu IMC é ' + imc + ', logo você está com Obesidade grau I ')
+            }
+            else if(imc >= 35.0 && imc <= 39.9){
+                document.write('Certo '+ nome +', seu IMC é ' + imc + ', logo você está com Obesidade grau II(severa) ')
+            }
+            else{
+                document.write('Certo '+ nome +', seu IMC é ' + imc + ', logo você está com Obesidade grau III (mórbida) ')
+            }
+
+        </script>
+
+
+    </head>
+    <body> 
+        
+    
+
+
+
+    </body>
+ 
+
+</html>
+
